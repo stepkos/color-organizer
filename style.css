@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5vh;
+    letter-spacing: 7px;
+    text-shadow: 0 0 25px black;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2vh;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px black;
+}
+
+/*---------------------*/
+/*---------------------*/
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1B1B1B;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.main {
+    width: 100vw;
+    height: 80vh;
+    background-color: #272727;
+    overflow: hidden;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 70vh;
+    margin-top: 5vh;
+    background-color: #1B1B1B;
+    border-radius: 50px;
+    box-shadow: 0 0 25px 0 black;
+    /* overflow: hidden; */
+}
+
+.scrolling {
+    width: 92%;
+    height: 92%;
+    position: relative;
+    top: 4%;
+    left: 4%;
+    overflow-y: auto;
+}
+
+.scrolling > article {
+    width: 95%;
+    height: 20%;
+    border-radius: 25px;
+    margin-bottom: 2%;
+    background-color: #272727;
+}
+
+.scrolling > article:last-child {
+    margin-bottom: 0;
+}
+
+.color {
+
+}
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1B1B1B;
+    text-align: center;
+    line-height: 10vh;
+}
+
