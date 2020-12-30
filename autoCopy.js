@@ -58,9 +58,48 @@ function promiseAnimation(text) {
 }
 
 
+async function promiseAnimationAwait(text) {
+    // Anti spam
+    if (headerAnim) {
+        return;
+    }
+
+    headerAnim = true;
+
+    header.style.opacity = 0;
+
+    await new Promise(resolve => {
+        setTimeout(() => {
+            header.innerHTML = text; 
+            header.style.opacity = 1;
+            resolve();
+        }, 300);
+    })
+    
+    
+    await new Promise(resolve => {
+        setTimeout(() => {
+            header.style.opacity = 0;
+            resolve();
+        }, 1500);
+    });
+      
+        
+    await new Promise(resolve => {
+        setTimeout(() => {
+            header.innerHTML = "Color Organizer";
+            header.style.opacity = 1;
+            resolve();
+            }, 300);
+    });
+
+    headerAnim = false;
+}
+
+
 function autoCopy() {
     document.execCommand("Copy");
-    promiseAnimation("Copied to clipboard!");   
+    promiseAnimationAwait("Copied to clipboard!");   
 }
 
 
