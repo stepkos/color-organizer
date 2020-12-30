@@ -27,13 +27,6 @@ function headerTextAnimation(text) {
 }
 
 function promiseAnimation(text) {
-    // Anti spam
-    if (headerAnim) {
-        return;
-    }
-
-    headerAnim = true;
-
     header.style.opacity = 0;
 
     new Promise(resolve => {
@@ -62,8 +55,6 @@ function promiseAnimation(text) {
             });
         });
     });
-
-    headerAnim = false;
 }
 
 
