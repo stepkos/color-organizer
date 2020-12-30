@@ -38,7 +38,7 @@ function promiseAnimation(text) {
 
     new Promise(resolve => {
         setTimeout(() => {
-            header.innerHTML = text;
+            header.innerHTML = text; 
             header.style.opacity = 1;
             resolve()
         }, 300);
