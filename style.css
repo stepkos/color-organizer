@@ -68,6 +68,7 @@ h3 {
     border-radius: 35px;
     margin-bottom: 2%;
     background-color: #272727;
+    display: flex;
 }
 
 .scrolling > article:last-child {
@@ -77,10 +78,9 @@ h3 {
 .tile {
     width: 13vmin;
     height: 13vmin;
-    margin-top: 3vmin;
-    /* margin-bottom: 3vmin; */
+    margin: auto 0;
     margin-left: 1.5vmin;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 3vmin;
 }
 
@@ -112,6 +112,26 @@ h3 {
 .hash:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.add {
+    width: 7vmin;
+    height: 7vmin;
+    border-radius: 2.2vmin;
+    margin-left: 3vmin;
+    display: flex;
+    background-color: #494949;
+}
+
+.add:hover {
+    background-color: #21a821;
+    cursor: pointer;
+}
+
+.add img {
+    margin: auto;
+    width: 3.5vmin;
+    filter: invert(100%);
 }
 
 .footer {

@@ -90,7 +90,7 @@ async function promiseAnimationAwait(text) {
             header.innerHTML = "Color Organizer";
             header.style.opacity = 1;
             resolve();
-            }, 300);
+        }, 300);
     });
 
     headerAnim = false;
