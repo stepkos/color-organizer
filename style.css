@@ -63,17 +63,17 @@ h3 {
 }
 
 .scrolling > article {
-    width: 95%;
-    height: 30%;
+    width: 80vw;
+    height: 29.9%;
     border-radius: 35px;
-    margin-bottom: 2%;
+    margin: 0 0 2% 0;
     background-color: #272727;
     display: flex;
 }
 
-.scrolling > article:last-child {
-    margin-bottom: 0;
-}
+/* .scrolling > article:last-child { */
+    /* margin-bottom: 0; */
+/* } */
 
 .tile {
     width: 13vmin;
@@ -131,6 +131,27 @@ h3 {
 .add img {
     margin: auto;
     width: 3.5vmin;
+    filter: invert(100%);
+}
+
+.addPalet {
+    width: 10vmin;
+    height: 10vmin;
+    margin: 0 auto;
+    margin-top: 4vmin;
+    border-radius: 3vmin;
+    display: flex;
+    background-color: #272727;
+}
+
+.addPalet:hover {
+    background-color: #21a821;
+    cursor: pointer;
+}
+
+.addPalet img {
+    margin: auto;
+    width: 5vmin;
     filter: invert(100%);
 }
 
