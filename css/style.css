@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5vh;
+    letter-spacing: 7px;
+    text-shadow: 0 0 25px black;
+    transition: opacity .3s;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2vh;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------*/
+/*---------------------*/
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1B1B1B;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.logout {
+    position: absolute;
+    right: 5vh;
+    top: 0;
+    font-size: 2vh;
+    line-height: 6vh;
+}
+
+.logoutButton {
+    margin: 0 auto;
+    width: 6vw;
+    line-height: 3.5vh;
+    border-radius: 1.5vh;
+    position: relative;
+    bottom: 1vh;
+    font-size: 2.2vh;
+    font-weight: 700;
+    color: white;
+    background-color: #494949;
+}
+
+.logoutButton:hover {
+    background-color: rgb(28, 125, 190);
+}
+
+.main {
+    width: 100vw;
+    height: 80vh;
+    background-color: #272727;
+    overflow: hidden;
+}
+
+.container {
+    width: 90vw;
+    height: 70vh;
+    margin: 5vh auto;
+    background-color: #1B1B1B;
+    border-radius: 40px;
+    box-shadow: 0 0 25px 0 black;
+}
+
+.scrolling {
+    width: 92%;
+    height: 92%;
+    position: relative;
+    top: 4%;
+    left: 4%;
+    overflow-y: auto;
+}
+
+.scrolling > article {
+    width: 80vw;
+    height: 29.9%;
+    border-radius: 35px;
+    margin: 0 0 2% 0;
+    background-color: #272727;
+    display: flex;
+    position: relative;
+}
+
+/* .scrolling > article:last-child { */
+    /* margin-bottom: 0; */
+/* } */
+
+.tile {
+    width: 13vmin;
+    height: 13vmin;
+    margin: auto 0;
+    margin-left: 1.5vmin;
+    /* display: inline-block; */
+    border-radius: 3vmin;
+    position: relative;
+}
+
+.tile:first-child {
+    margin-left: 3vmin;
+}
+
+.delTile {
+    position: absolute;
+    right: 1vmin;
+    top: 0;
+    font-size: 3vmin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.tile:hover .delTile {
+    opacity: 1;
+}
+
+.delTile:hover {
+    color: red;
+}
+
+.hash {
+    width: 13vmin;
+    height: 13vmin;
+    font-size: 2.7vmin;
+    line-height: 13vmin;
+    border-radius: 3vmin;
+    text-align: center;
+    /* color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    /* transition: opacity .2s ease-in-out; */
+    -webkit-user-select: all;  /* Chrome 49+ */
+    -moz-user-select: all;     /* Firefox 43+ */
+    -ms-user-select: all;      /* No support yet */
+    user-select: all;
+    cursor: pointer;
+}
+
+.hash::selection {
+    color: white;
+}
+
+.hash:hover {
+    opacity: 1;
+}
+
+.add {
+    width: 7vmin;
+    height: 7vmin;
+    border-radius: 2.2vmin;
+    margin-left: 3vmin;
+    display: flex;
+    background-color: #494949;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #21a821;
+}
+
+.add img {
+    margin: auto;
+    width: 3.5vmin;
+    filter: invert(100%);
+}
+
+.delete {
+    color: white;
+    position: absolute;
+    right: 3vmin;
+    bottom: 2vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    font-size: 2.2vmin;
+    background-color: rgb(202, 34, 34);
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(119, 20, 20);
+}
+
+.addPalet {
+    width: 10vmin;
+    height: 10vmin;
+    margin: 0 auto;
+    margin-top: 4vmin;
+    border-radius: 3vmin;
+    display: flex;
+    background-color: #272727;
+    cursor: pointer;
+}
+
+.addPalet:hover {
+    background-color: #21a821;
+}
+
+.addPalet img {
+    margin: auto;
+    width: 5vmin;
+    filter: invert(100%);
+}
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1B1B1B;
+    text-align: center;
+    line-height: 10vh;
+}
+
