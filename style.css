@@ -69,6 +69,7 @@ h3 {
     margin: 0 0 2% 0;
     background-color: #272727;
     display: flex;
+    position: relative;
 }
 
 /* .scrolling > article:last-child { */
@@ -132,6 +133,16 @@ h3 {
     margin: auto;
     width: 3.5vmin;
     filter: invert(100%);
+}
+
+.delete {
+    position: absolute;
+    right: 3vmin;
+    bottom: 2vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    font-size: 2.2vmin;
+    background-color: rgb(202, 34, 34);
 }
 
 .addPalet {
