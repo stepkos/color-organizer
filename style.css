@@ -26,6 +26,10 @@ h3 {
     text-shadow: 0 0 15px black;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*---------------------*/
 /*---------------------*/
 
@@ -157,6 +161,7 @@ h3 {
 }
 
 .delete {
+    color: white;
     position: absolute;
     right: 3vmin;
     bottom: 2vmin;
