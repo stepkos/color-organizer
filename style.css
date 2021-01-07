@@ -128,6 +128,7 @@ a {
     color: white;
     opacity: 0;
     z-index: 2;
+    cursor: pointer;
 }
 
 .tile:hover .delTile {
@@ -136,7 +137,6 @@ a {
 
 .delTile:hover {
     color: red;
-    cursor: pointer;
 }
 
 .hash {
@@ -153,7 +153,8 @@ a {
     -webkit-user-select: all;  /* Chrome 49+ */
     -moz-user-select: all;     /* Firefox 43+ */
     -ms-user-select: all;      /* No support yet */
-    user-select: all; 
+    user-select: all;
+    cursor: pointer;
 }
 
 .hash::selection {
@@ -162,7 +163,6 @@ a {
 
 .hash:hover {
     opacity: 1;
-    cursor: pointer;
 }
 
 .add {
@@ -172,11 +172,11 @@ a {
     margin-left: 3vmin;
     display: flex;
     background-color: #494949;
+    cursor: pointer;
 }
 
 .add:hover {
     background-color: #21a821;
-    cursor: pointer;
 }
 
 .add img {
@@ -194,10 +194,10 @@ a {
     border-radius: 1vmin;
     font-size: 2.2vmin;
     background-color: rgb(202, 34, 34);
+    cursor: pointer;
 }
 
 .delete:hover {
-    cursor: pointer;
     background-color: rgb(119, 20, 20);
 }
 
@@ -209,11 +209,11 @@ a {
     border-radius: 3vmin;
     display: flex;
     background-color: #272727;
+    cursor: pointer;
 }
 
 .addPalet:hover {
     background-color: #21a821;
-    cursor: pointer;
 }
 
 .addPalet img {
