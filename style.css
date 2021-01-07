@@ -83,10 +83,31 @@ h3 {
     margin-left: 1.5vmin;
     /* display: inline-block; */
     border-radius: 3vmin;
+    position: relative;
 }
 
 .tile:first-child {
     margin-left: 3vmin;
+}
+
+.delTile {
+    position: absolute;
+    right: 1vmin;
+    top: 0;
+    font-size: 3vmin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+}
+
+.tile:hover .delTile {
+    opacity: 1;
+}
+
+.delTile:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .hash {
@@ -143,6 +164,11 @@ h3 {
     border-radius: 1vmin;
     font-size: 2.2vmin;
     background-color: rgb(202, 34, 34);
+}
+
+.delete:hover {
+    cursor: pointer;
+    background-color: rgb(119, 20, 20);
 }
 
 .addPalet {
