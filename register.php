@@ -14,7 +14,9 @@
 
 <form method="post">
     
-    <input type="text" name="nick" placeholder="nick">
+    <input type="text" name="nick" placeholder="nick"
+    <?= isset($_SESSION['given_nick']) ?
+    'value="'.$_SESSION['given_nick'].'"' : '' ?>>
 
     <?php
         if (isset($_SESSION['e_nick'])) {
@@ -23,7 +25,9 @@
         }
     ?>
 
-    <input type="email" name="email" placeholder="email">
+    <input type="email" name="email" placeholder="email"
+    <?= isset($_SESSION['given_email']) ?
+    'value="'.$_SESSION['given_email'].'"' : '' ?>>
 
     <?php
         if (isset($_SESSION['e_email'])) {

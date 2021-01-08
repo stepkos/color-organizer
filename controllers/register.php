@@ -6,7 +6,13 @@ if (isset($_SESSION['logged'])) {
     exit();
 }
 
-if (isset($_POST['email'])) {
+if (isset($_POST['nick']) || isset($_POST['email'])) {
+
+    if (isset($_POST['email']))
+        $_SESSION['given_email'] = $_POST['email'];
+
+    if (isset($_POST['nick']))
+        $_SESSION['given_nick'] = $_POST['nick'];
 
     // Flag do form is correct
     $correctForm = true;
