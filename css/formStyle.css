@@ -1,6 +1,7 @@
 .container {
     width: 250px;
     height: 300px;
+    /* height: 600px; */
     padding: 100px;
     /* text-align: center; */
 }
@@ -52,3 +53,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(39, 121, 14);
 }
+
+/* .error { */
+
+/* } */
