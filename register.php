@@ -48,6 +48,11 @@
     <input type="password" name="password2" placeholder="password again">
 
     <input type="submit" value="Register">
+
+    <a href="login.php">
+        <div class="note">Login if you already have account</div>
+    </a>
+    
 </div>
 
 

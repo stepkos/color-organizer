@@ -28,6 +28,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /*---------------------*/
@@ -228,5 +229,14 @@ a {
     background-color: #1B1B1B;
     text-align: center;
     line-height: 10vh;
+}
+
+.note {
+    margin-top: 3px;
+    padding: 0 5px;
+}
+
+.note:hover {
+    color: rgb(189, 189, 189);
 }
 

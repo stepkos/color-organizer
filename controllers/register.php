@@ -1,7 +1,7 @@
 <?php
 
 // If user is login go to main page
-if (isset($_SESSION['logged'])) {
+if (isset($_SESSION['logged_id'])) {
     header("Location: index.php");
     exit();
 }
@@ -82,9 +82,10 @@ if (isset($_POST['nick']) || isset($_POST['email'])) {
         $query->bindValue(':email', $email, PDO::PARAM_STR);
         $query->execute();
         
+        unset($_SESSION['given_nick']);
+        unset($_SESSION['given_email']);
         header('Location: login.php');
         exit();
     }
-        
 }
 
