@@ -5,7 +5,7 @@
 
             <div class="logout">
                 Logged in as: <b>nick</b>
-                <a href="#" title="Click to logout">
+                <a href="logout.php" title="Click to logout">
                     <div class="logoutButton">
                         Logout
                     </div>
