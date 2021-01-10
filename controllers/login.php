@@ -1,6 +1,6 @@
 <?php
 
-// If user is nick go to main page
+// If user is logged go to main page
 if (isset($_SESSION['logged_id'])) {
     header("Location: index.php");
     exit();
