@@ -14,26 +14,34 @@
 
     <?php 
         if (isset($pallets)) {
-            foreach($pallets as $palette) {
+            foreach($pallets as $key => $palette) {
     
                 echo '<article>';
-    
-                    foreach($palette as $color) {
-                        echo '
-                            <div class="tile" style="background-color: '.$color['color'].';">
-                                <a href="#" title="Click to delete"><div class="delTile">x</div></a>
-                                <a title="Click to copy"><div class="hash">'.$color['color'].'</div></a>
-                            </div>
-                        ';
-                    }
+
+                foreach($palette as $color) {
+                    echo '
+                        <div class="tile" style="background-color: '.$color['color'].';">
+                            <a href="deleteColor.php?color_id='.$color['color_id'].'" title="Click to delete">
+                                <div class="delTile">x</div>
+                            </a>
+                            <a title="Click to copy"><div class="hash">'.$color['color'].'</div></a>
+                        </div>
+                    ';
+                }
     
                 echo '
-                    <a href="deletePalette.php?palette_id='.$palette[0]['palette_id'].'" title="Delete palette">
+                    <a href="#" title="Add color" style="display: block; margin: auto 0;">
+                        <div class="tile add">
+                            <img src="icons/add.svg" alt="Add">
+                        </div>                            
+                    </a>
+
+                    <a href="deletePalette.php?palette_id='.$key.'" title="Delete palette">
                         <div class="delete">Delete</div>
                     </a>
     
                     </article>
-                ';  
+                ';
             }
         }
 
