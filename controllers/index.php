@@ -12,7 +12,7 @@ $purePallets = $db->query("SELECT * FROM pallets WHERE user_id='{$_SESSION['logg
 if ($purePallets) {
     foreach ($purePallets as $row) {
         $pallets[$row['palette_id']] = $db
-            ->query("SELECT color_id, color FROM colors WHERE palette_id='{$row['palette_id']}'")
+            ->query("SELECT * FROM colors WHERE palette_id='{$row['palette_id']}'")
             ->fetchAll();
     }
 }

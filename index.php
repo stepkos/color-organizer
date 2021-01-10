@@ -13,27 +13,28 @@
 <div class="scrolling">
 
     <?php 
-
-        foreach($pallets as $palette) {
-
-            echo '<article>';
-
-                foreach($palette as $color) {
-                    echo '
-                        <div class="tile" style="background-color: '.$color['color'].';">
-                            <a href="#" title="Click to delete"><div class="delTile">x</div></a>
-                            <a title="Click to copy"><div class="hash">'.$color['color'].'</div></a>
-                        </div>
-                    ';
-                }
-
-            echo '
-                <a href="#" title="Delete palette">
-                    <div class="delete">Delete</div>
-                </a>
-
-                </article>
-            ';  
+        if (isset($pallets)) {
+            foreach($pallets as $palette) {
+    
+                echo '<article>';
+    
+                    foreach($palette as $color) {
+                        echo '
+                            <div class="tile" style="background-color: '.$color['color'].';">
+                                <a href="#" title="Click to delete"><div class="delTile">x</div></a>
+                                <a title="Click to copy"><div class="hash">'.$color['color'].'</div></a>
+                            </div>
+                        ';
+                    }
+    
+                echo '
+                    <a href="deletePalette.php?palette_id='.$palette[0]['palette_id'].'" title="Delete palette">
+                        <div class="delete">Delete</div>
+                    </a>
+    
+                    </article>
+                ';  
+            }
         }
 
     ?>
