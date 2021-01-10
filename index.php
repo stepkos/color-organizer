@@ -47,7 +47,7 @@
 
     ?>
 
-    <a href="#" title="Add pallete">
+    <a href="addPalette.php" title="Add pallete">
         <div class="addPalet">
             <img src="icons/add.svg" alt="Add Palet">
         </div>
