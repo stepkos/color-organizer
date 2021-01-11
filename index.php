@@ -30,7 +30,7 @@
                 }
     
                 echo '
-                    <a href="#" title="Add color" style="display: block; margin: auto 0;">
+                    <a href="addColor.php?palette_id='.$key.'" title="Add color" style="display: block; margin: auto 0;">
                         <div class="tile add">
                             <img src="icons/add.svg" alt="Add">
                         </div>                            
