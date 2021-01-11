@@ -15,7 +15,7 @@ $query->execute();
 
 $result = $query->fetch();
 
-if ($result && $result['user_id']=$_SESSION['logged_id']) {
+if ($result && $result['user_id'] == $_SESSION['logged_id']) {
     $query = $db->prepare('DELETE FROM pallets WHERE palette_id=:p_id');
     $query->bindValue(':p_id', $palette_id, PDO::PARAM_INT);
     $query->execute();

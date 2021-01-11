@@ -10,7 +10,7 @@ require_once "db/connect.php";
 $color_id = $_GET['color_id'];
 $user_id = $_SESSION['logged_id'];
 
-$query = $db->prepare('SELECT colors.color
+$query = $db->prepare('SELECT colors.color_id
     FROM users
         INNER JOIN pallets
             ON users.user_id = pallets.user_id
@@ -26,10 +26,12 @@ $result = $query->fetchAll();
 
 if ($result) {
     foreach($result as $row) {
-        if ($row['color_id'] = $color_id) {
+        if ($row['color_id'] == $color_id) {
             $query = $db->prepare('DELETE FROM colors WHERE color_id=:color_id');
             $query->bindValue(':color_id', $color_id, PDO::PARAM_INT);
             $query->execute();
+            header("Location: index.php");
+            exit();
         }
     }
 }
