@@ -16,7 +16,7 @@ if (isset($_POST['nick']) && isset($_POST['password'])) {
 
     require_once 'db/connect.php';
 
-    $query = $db->prepare('SELECT user_id, password_hash FROM users WHERE login = :nick');
+    $query = $db->prepare('SELECT user_id, login, password_hash FROM users WHERE login = :nick');
     $query->bindValue(':nick', $nick, PDO::PARAM_STR);
     $query->execute();
 
@@ -24,6 +24,7 @@ if (isset($_POST['nick']) && isset($_POST['password'])) {
 
     if ($user && password_verify($password, $user['password_hash'])) {
         $_SESSION['logged_id'] = $user['user_id'];
+        $_SESSION['nick'] = $user['login'];
         unset($_SESSION['e_login']);
         header('Location: index.php');
         exit();

@@ -18,6 +18,8 @@ if (isset($_POST['hash'])) {
         exit();
     }
 
+    $hash = strtoupper($hash);
+
     $query = $db->prepare('SELECT user_id FROM pallets WHERE palette_id=:p_id');
     $query->bindValue(':p_id', $palette_id, PDO::PARAM_INT);
     $query->execute();
