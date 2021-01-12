@@ -17,10 +17,10 @@ db/config.php
 
 ```php
 return [
-    'host'      => '<your host>',
-    'user'      => '<your username>',
-    'password'  => '<your password>',
-    'database'  => '<your database>'
+    'host'      =>  '<your host>',
+    'user'      =>  '<your username>',
+    'password'  =>  '<your password>',
+    'database'  =>  '<your database>'
 ];
 ```
 

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'host'      => 'localhost',
-    'user'      => 'root',
-    'password'  => '',
-    'database'  => 'colororganizer'
+    'host'      =>  'localhost',
+    'user'      =>  'root',
+    'password'  =>  '',
+    'database'  =>  'colororganizer'
 ];
