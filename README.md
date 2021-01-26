@@ -3,7 +3,7 @@
 
 ---
 ## Using
-### You have to have php and mysql - recommended xampp
+### All you have to have is php and mysql - recommended xampp
 
 After creating database execute this file
 ```
